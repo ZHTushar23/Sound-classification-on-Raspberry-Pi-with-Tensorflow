@@ -58,7 +58,7 @@ def one_hot_encode(labels):
     return one_hot_encode
 
 
-parent_dir = 'UrbanSound8K/audio'
+parent_dir = '/home/local/AD/ztushar1/Data/UrbanSound8K/audio'
 
 sub_dirs = ['fold1', 'fold2', 'fold3', 'fold4', 'fold5', 'fold6', 'fold7', 'fold8', 'fold9', 'fold10']
 
@@ -98,7 +98,7 @@ n_hidden_units_one = 256
 n_hidden_units_two = 256
 sd = 1 / np.sqrt(n_dim)
 learning_rate = 0.01
-model_path = "./model"
+model_path = "./trained_model"
 
 X = tf.placeholder(tf.float32, [None, n_dim])
 Y = tf.placeholder(tf.float32, [None, n_classes])
